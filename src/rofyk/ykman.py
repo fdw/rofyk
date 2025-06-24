@@ -25,4 +25,4 @@ class Ykman:
             ["ykman", "oath", "accounts", "code", "--single", f"{entry.name}:{entry.username}"],
             capture_output=True,
             encoding="utf-8",
-        ).stdout
+        ).stdout.strip("\n")
